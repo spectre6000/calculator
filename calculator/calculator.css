@@ -1,0 +1,91 @@
+
+*{box-sizing:border-box;}
+
+#container {
+  position: relative;
+  width: 158px;
+  height: 235px;
+  margin: auto;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: orange;
+}
+
+  #output {
+    width: 148px;
+    height: 40px;
+    margin: 0 auto 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+    overflow: scroll;
+    text-align: right;
+    padding: 5px;
+  }
+
+    h1 {
+      font-family: sans-serif;
+      font-size: 30px;
+    }
+
+  #keypad {
+    position: relative;
+    width: 148px;
+    height: 180px;
+    margin:auto;
+    border-radius: 5px;
+    background-color: lightgray;
+  }
+
+    .key_row {
+      margin:2.5px;
+      height: 35px;
+      width: 110px;
+      position: relative;
+      top: 2px;
+      left: -4px;
+    }
+
+    .key_col {
+      float: right;
+      height: 175;
+      width: 25px;
+      margin: 2.5px;
+      position: relative;
+    }
+
+      .num_key {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        float: right;
+        text-align: center;
+        margin: 2.5px;
+        padding: 7px;
+        z-index: 100;
+        -webkit-user-select: none;
+      }
+
+        .key_col .num_key {
+          margin-top: 5px;
+        }
+
+        .num_key:hover {
+          cursor: pointer;
+        }
+
+        .num_key:active {
+          background-color: lightgray;
+        }
+
+      #clear {
+        float:none;
+        display: inline-block;
+        height: 20px;
+        width: 90%;
+        border-radius: 5px;
+        position: relative;
+        top: 5px;
+        left: 2.5%;
+        padding: 3px;
+      }
